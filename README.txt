@@ -1,0 +1,1 @@
+This shows temperature in Minsk at 00:00 tomorrow
