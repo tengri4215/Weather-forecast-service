@@ -1,0 +1,11 @@
+header {
+background: hsla(70, 76%, 65%, 1);
+
+background: linear-gradient(90deg, hsla(70, 76%, 65%, 1) 0%, hsla(237, 85%, 53%, 1) 0%, hsla(186, 81%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(70, 76%, 65%, 1) 0%, hsla(237, 85%, 53%, 1) 0%, hsla(186, 81%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(70, 76%, 65%, 1) 0%, hsla(237, 85%, 53%, 1) 0%, hsla(186, 81%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4EA62", endColorstr="#1F29ED", GradientType=1 );
+}
