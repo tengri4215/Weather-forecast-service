@@ -20,6 +20,13 @@
             </div>
         </div>
     </header>
-    <p>Temperature today: <span th:text="${t}">unknown</span></p>
+    <dt class="col-sm-3">Температура: </dt>
+    <dd class="col-sm-3"><span th:text="${temp}">unknown</span> C</dd>
+    <dt class="col-sm-3">Скорость ветра: </dt>
+    <dd class="col-sm-3"><span th:text="${wind}">unknown</span> км/ч</dd>
+    <dt class="col-sm-3">Осадки: </dt>
+    <dd class="col-sm-3"><span th:text="${prec}">unknown</span> мм</dd>
+    <dt class="col-sm-3">Облачность: </dt>
+    <dd class="col-sm-3"><span th:text="${cloud}">unknown</span> %</dd>
 </body>
 </html>

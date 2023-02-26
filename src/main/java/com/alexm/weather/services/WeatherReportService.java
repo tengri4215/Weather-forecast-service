@@ -9,10 +9,10 @@ import java.time.LocalDateTime;
 
 @Service
 public class WeatherReportService {
-    public String returnTemperature() {
+    public String returnParameterThisHour(String param) {
         JSONObject hourly = (JSONObject) OpenMeteoApi.makeApiCall().get("hourly");
 
-        JSONArray temperature = (JSONArray) hourly.get("temperature_2m");
-        return temperature.get(LocalDateTime.now().getHour()).toString();
+        JSONArray paramarr = (JSONArray) hourly.get(param);
+        return paramarr.get(LocalDateTime.now().getHour()).toString();
     }
 }

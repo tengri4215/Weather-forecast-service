@@ -21,8 +21,20 @@ public class WeatherReportController {
         return "index";
     }
 
-    @ModelAttribute("t")
+    @ModelAttribute("temp")
     public String getT() {
-        return weatherReportService.returnTemperature();
+        return weatherReportService.returnParameterThisHour("temperature_2m");
+    }
+    @ModelAttribute("cloud")
+    public String getC() {
+        return weatherReportService.returnParameterThisHour("cloudcover");
+    }
+    @ModelAttribute("prec")
+    public String getP() {
+        return weatherReportService.returnParameterThisHour("precipitation");
+    }
+    @ModelAttribute("wind")
+    public String getW() {
+        return weatherReportService.returnParameterThisHour("windspeed_10m");
     }
 }

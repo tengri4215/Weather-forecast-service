@@ -16,7 +16,7 @@ public class OpenMeteoApi {
         StringBuffer content = new StringBuffer();
 
         try {
-            URL url = new URL("https://api.open-meteo.com/v1/forecast?latitude=53.89&longitude=27.55&hourly=temperature_2m");
+            URL url = new URL("https://api.open-meteo.com/v1/forecast?latitude=53.90&longitude=27.57&hourly=temperature_2m,precipitation,weathercode,cloudcover,windspeed_10m&daily=weathercode&current_weather=true&timezone=auto");
             URLConnection urlConn = url.openConnection();
 
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
